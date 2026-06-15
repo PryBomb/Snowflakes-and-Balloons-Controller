@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Instrument Serif", serif;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--max-opacity, 0.85);
+  }
+  85% {
+    opacity: var(--max-opacity, 0.85);
+  }
+  100% {
+    transform: translateY(calc(100vh + 30px)) rotate(var(--rotate-deg, 360deg));
+    opacity: 0;
+  }
+}
+
+@keyframes balloonfloat {
+  0% {
+    transform: translateY(calc(100vh + 80px));
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--max-opacity, 0.95);
+  }
+  85% {
+    opacity: var(--max-opacity, 0.95);
+  }
+  100% {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: var(--sway-distance, 25px) 0;
+  }
+}
+
+@keyframes confettifall {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--max-opacity, 0.9);
+  }
+  85% {
+    opacity: var(--max-opacity, 0.9);
+  }
+  100% {
+    transform: translateY(calc(100vh + 30px)) rotate(var(--rotate-deg, 720deg));
+    opacity: 0;
+  }
+}
+
+.animate-snow {
+  animation: snowfall var(--duration, 4.5s) linear forwards, sway var(--sway-duration, 3.5s) ease-in-out infinite;
+}
+
+.animate-balloon {
+  animation: balloonfloat var(--duration, 5s) ease-out forwards, sway var(--sway-duration, 4s) ease-in-out infinite;
+}
+
+.animate-confetti {
+  animation: confettifall var(--duration, 4s) cubic-bezier(0.25, 1, 0.5, 1) forwards, sway var(--sway-duration, 3s) ease-in-out infinite;
+}

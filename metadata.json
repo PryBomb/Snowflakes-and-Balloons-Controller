@@ -1,0 +1,6 @@
+{
+  "name": "Snowflakes and Balloons Controller",
+  "description": "Trigger and view falling snowflakes or floating balloons on the screen for a precise 5-second duration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
