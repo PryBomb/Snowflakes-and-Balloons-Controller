@@ -2,34 +2,32 @@
   <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# ❄️ Snowflakes and Balloons Controller
+# Snowflakes and Balloons Controller
 
-A dynamic React & TypeScript web application generated via Google AI Studio, featuring state-of-the-art interactive UI controls, smooth visual effects, and customized ambient audio synthesis.
+An interactive React and TypeScript web app built using Google AI Studio. It features custom UI controls, smooth physics-based animations, and a built-in sound synthesizer for audio feedback.
 
-🎨 **View Original in AI Studio:** [Launch Sandbox](https://ai.studio/apps/06ea5798-83f1-4cc9-abc9-26908234ad9e)
-
----
-
-## 🚀 Kaggle Challenge: Day 1 Milestone
-This repository marks the completion of the **Day 1 Task** for the Kaggle track. 
-* **Objective:** Successfully export an AI-generated web prototype from Google AI Studio, configure its environment, and transition the project to a local development workflow for future iteration and model scaling.
+🔗 **AI Studio Sandbox:** [View Original App](https://ai.studio/apps/06ea5798-83f1-4cc9-abc9-26908234ad9e)
 
 ---
 
-## 🛠️ Features & Stack
-* **Framework:** React with TypeScript (Vite-powered environment)
-* **Styling:** Tailwind CSS (featuring advanced *Serene Light* and *Luxury Obsidian Dark* theme toggles)
-* **Audio:** Client-side synthesizer powered by the Web Audio API
-* **Icons:** Lucide React
+### Kaggle Challenge - Day 1 Task
+This project is part of my Day 1 task for the Kaggle track. The goal was to build and export a functional web prototype from AI Studio, set up the local environment, and commit it to GitHub as a baseline for further development.
 
 ---
 
-## 💻 Local Setup & Development
+## Features
+* **Tech Stack:** React, TypeScript, and Vite.
+* **Styling:** Tailwind CSS with a custom theme toggle (Serene Light & Luxury Obsidian Dark).
+* **Audio:** Client-side synthesizer built with the native Web Audio API.
+
+---
+
+## How to Run Locally
 
 ### Prerequisites
-Ensure you have **Node.js** (v18+ recommended) installed on your system.
+Make sure you have **Node.js** installed.
 
-### 1. Installation
-Clone the repository, navigate to the root directory, and install the necessary package dependencies:
+### 1. Install Dependencies
+Clone the repository, open your terminal in the project folder, and run:
 ```bash
 npm install
